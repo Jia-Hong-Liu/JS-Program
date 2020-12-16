@@ -1,0 +1,19 @@
+body{
+    background-color: black;
+    color:white;
+    text-align: center;
+
+}
+#p1{
+    font-size: 7px;
+    color: #FF00AA;
+}
+#p2{
+    font-size: 4px;
+}
+#p3{
+    width: 73%;
+    font-size: 5px;
+    color: #ffaa77;
+    font-family: 標楷體;
+}

@@ -1,0 +1,114 @@
+/* 設定滑鼠游標指在連結位置上的樣式 */
+
+body {
+    margin: 0 0 0 0;
+    font-family: 標楷體;
+}
+
+#title {
+    position: absolute;
+    text-align: center;
+    font-size: 55px;
+    top: 0;
+    height: 65px;
+    width: 1024px;
+    text-shadow: 0.1em 0.1em 0.15em black;
+    color: rgba(0, 26, 255, 0.774);
+    border: solid black;
+}
+
+.left {
+    position: relative;
+    background-image: url(images/menu1.png);
+    width: 78%;
+    left: 11%;
+}
+
+.right:hover {
+    background-image: url(images/menu2.png);
+}
+
+.pic {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+}
+
+#nav {
+    position: absolute;
+    font-size: 25px;
+    text-align: center;
+    top: 66px;
+    height: 673px;
+    width: 254px;
+    border: solid black;
+}
+
+#time {
+    border-top: solid black;
+    position: absolute;
+    height: 30px;
+    width: 100%;
+    bottom: 0px;
+    font-size: 20px;
+}
+
+#contaner {
+    position: absolute;
+    left: 254px;
+    top: 68px;
+    width: 772px;
+    height: 673px;
+    border-right: solid black;
+    border-bottom: solid black;
+}
+
+#head {
+    position: absolute;
+    text-align: center;
+    font-size: 25px;
+    left: 0.4%;
+    width: 100%;
+    height: 30px;
+    color: blue;
+    border-bottom: solid black;
+}
+
+#content {
+    font-size: 20px;
+    position: absolute;
+    color: blue;
+    text-align: center;
+    top: 33px;
+    left: 0.8%;
+    width: 99%;
+    height: 640px;
+    background-image: url(2nd/images/0101.jpg);
+}
+
+.pic2 {
+    position: absolute;
+    top: 5%;
+    right: 35%;
+    width: 250px;
+    height: 250px;
+}
+
+#word {
+    position: absolute;
+    left: 20%;
+    bottom: 20%;
+}
+
+#foot {
+    position: absolute;
+    width: 1026px;
+    top: 738px;
+    height: 40px;
+    border-bottom: solid black;
+    border-right: solid black;
+}
+
+#date {
+    font-size: 15px;
+}

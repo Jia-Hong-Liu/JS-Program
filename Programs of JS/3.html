@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>面積單位換算</title>
+    <script src="3.js"></script>
+    <style>
+        body {
+            font-family: 'Times New Roman', "標楷體";
+        }
+        
+        div>div {
+            border: solid 1px;
+            background-color: rgb(214, 211, 211);
+            width: 12.8%;
+        }
+        
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        
+        table,
+        tr,
+        td {
+            padding: 10px;
+        }
+        
+        #con {
+            position: absolute;
+            top: 22%;
+            left: 17%;
+        }
+    </style>
+</head>
+
+<body onkeydown="keyLogin();">
+    <div>
+        <h2>&nbsp&nbsp『人性化設計』</h2>
+        <ul>
+            <li>按下Enter即可輸入內容</li>
+            <li>按下空白鍵即可列印內容</li>
+            <li>按下Esc即可清除數字</li>
+            <li>按下f5即可全部清除</li>
+        </ul>
+    </div>
+    <div>
+        坪<br>
+        <div>
+            <input id="O1" type="number" min="0"><span>ping</span>
+        </div>
+        平方公尺
+        <div>
+            <input id="O2" type="number" min="0">&nbsp;<span>m2</span>
+        </div>
+        公畝
+        <div>
+            <input id="O3" type="number" min="0">&nbsp;&nbsp;&nbsp;<span>a</span>
+        </div>
+        甲
+        <div>
+            <input id="O4" type="number" min="0">&nbsp;<span>kah</span>
+        </div>
+    </div>
+    <br>
+    <button id="enter" onclick="convert()">換算</button>
+    <button id="space" onclick="printNum()">列印</button>
+    <button id="Esc" onclick="del()">清除數字</button>
+    <button onclick="javascript:window.location.reload()">全部清除</button>
+
+    <div id="con">
+        查詢結果:
+        <table id="myTable">
+            <tr>
+                <td>坪</td>
+                <td>平方公尺</td>
+                <td>公畝</td>
+                <td>甲</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

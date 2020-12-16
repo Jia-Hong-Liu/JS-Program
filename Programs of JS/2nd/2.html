@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>國立科技高中</title>
+    <link rel="stylesheet" href="2.css">
+</head>
+
+<body>
+    <div id="title">
+        <span><img class="pic" src="images/logo1.png" alt=""></span>
+        <span><a style="text-decoration: none" href="main.html" target="myframe">國立科技高中-校園社團介紹網</a></span>
+        <span><img class="pic" src="images/logo3.jpg" alt=""></span>
+    </div>
+
+    <div id="nav"><br><br>
+        <div class="left"><a class="right" href="history.html" target="myframe">歷史沿革</a></div><br>
+        <div class="left"><a class="right" href="event.html" target="myframe">活動公告</a></div><br>
+        <div class="left"><a class="right" href="learning.html" target="myframe">教學課程</a></div>
+        <div id="time">
+            <script>
+                var Today = new Date();　
+                var x = document.write("最近更新日期:" + Today.getFullYear() + "." + (Today.getMonth() + 1) + "." + Today.getDate());
+            </script>
+        </div>
+    </div>
+    <div id="contaner">
+        <header id="head">
+            歡迎光臨吉他社首頁，請支持社團活動。
+        </header>
+        <iframe id="content" src="main.html" frameborder="0" name="myframe"></iframe>
+
+    </div>
+    <footer id="foot">
+        <p style="text-align: center;">網頁設計及維護:劉家宏</p>
+    </footer>
+
+</body>
+
+</html>

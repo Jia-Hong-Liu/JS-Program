@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>備忘錄</title>
+    <script src="4.js"></script>
+    <style>
+        #T1 {
+            position: absolute;
+            width: 23.3%;
+        }
+        
+        body {
+            font-family: 'Times New Roman', "標楷體"
+        }
+        
+        h2 {
+            position: relative;
+        }
+    </style>
+</head>
+<!-- onkeydown="keyLogin();" 呼叫函數，當按下Enter時自動輸入值-->
+
+<body onkeydown="keyLogin();">
+    <div>
+        <h2>&nbsp&nbsp『人性化設計』</h2>
+        <ul>
+            <li>按下Enter即可輸入內容</li>
+            <li>按下Esc即可刪除內容</li>
+            <li>輸入資料後，會自動清除輸入欄位資料</li>
+            <li>表格內中英文會切換字體</li>
+        </ul>
+        <h2>&nbsp&nbsp『防呆設計』</h2>
+        <ul>
+            <li>若輸入關鍵字不存在，則會顯示【無此關鍵字】</li>
+            <li>若輸入值為空，則按任意鍵皆會顯示【不能為空】</li>
+            <li>表格寬度固定，文字超過會自動換行</li>
+        </ul>
+    </div>
+    <div>
+        <!-- 用form的id存取值會跑到後端，要用input -->
+        <!-- <form id="word"> -->
+        <input id="word2" type="text" name="name" autocomplete="off">
+        <!-- </form> -->
+        <button id="enter" onclick="Add_words()">Add to Bottom</button>
+        <button id="Esc" onclick="delete_words()">Delete Item</button>
+
+    </div>
+    <table border="1" id="T1">
+        <th>
+            To-do-list
+        </th>
+        <tr>
+            <td>
+                <ol id="myList"></ol>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
